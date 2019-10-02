@@ -1,0 +1,143 @@
+.box-body dl {
+  font-size: 18px;
+}
+
+.danger {
+  color: #9e2e21;
+  display: inline;
+}
+
+.jumbotron {
+  background-color: #fff;
+  text-align:center;
+}
+.jumbotron h2 {
+  font-size: 40px;
+}
+
+.welcome-jumbotron h1 {
+  margin-bottom: 60px;
+}
+
+.welcome-jumbotron p {
+  margin-bottom: 60px;
+  font-size: 30px;
+}
+
+.search-link {
+  cursor: pointer;
+  color: #555;
+}
+
+.search-link:hover {
+  color: #dd4b39;
+}
+
+.search-bar {
+  opacity: 0;
+  max-height: 0px;
+}
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+.checkboxTwo {
+	width: 100%;
+	height: 35px;
+	background: #333;
+
+	border-radius: 50px;
+	position: relative;
+}
+
+.checkboxTwo:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	height: 6%;
+	width: 75%;
+	background: #111;
+}
+
+.checkboxTwo label {
+	display: block;
+	width: 15%;
+	height: 50%;
+	border-radius: 50%;
+
+	transition: all .5s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 30%;
+	z-index: 1;
+	left: 10%;
+	background: #ddd;
+}
+
+.checkboxTwo input[type=checkbox]:checked + label {
+	left: 75%;
+	background: #046036;
+}
+
+.noExpand {
+  resize: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 11px;
+  color: #fff;
+  background-color: #03586D;
+  border-color: #024454;
+}
+
+.title-obg:before {
+  content: "*";
+  color: #03586D;
+}
+
+.title-obg{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.table {
+  background-color: #ffffff;
+}
+
+.pagination > .active > a {
+  background-color: #03586d;
+}
+
+.pagination > .active > a:hover {
+  background-color: #024454;
+}

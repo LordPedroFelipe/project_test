@@ -1,0 +1,40 @@
+<section class="content-header">
+  <h1>
+    Total de negócios por mês do ano 2017.
+  </h1>
+</section>
+
+<section class="content">
+    <div class="table-responsive" *ngIf="data.length > 0">      
+      <table class="table table-hover table-striped" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5">
+        <thead>
+          <tr>
+            <th>
+              <mfDefaultSorter by="month">Mês</mfDefaultSorter>
+            </th>
+            <th>
+              <mfDefaultSorter by="year">Ano</mfDefaultSorter>
+            </th>
+            <th>
+              <mfDefaultSorter by="count">Qtde negócios</mfDefaultSorter>
+            </th>
+            <th class="text-right"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of mf.data">
+            <td>{{data.month}}</td>
+            <td>{{data.year}}</td>
+            <td>{{data.count}}</td>        
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr *ngIf="data.length > 5">
+              <td colspan="3">
+                  <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+              </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+</section>
