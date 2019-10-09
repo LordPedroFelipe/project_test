@@ -17,6 +17,10 @@ Tecnologias utilizadas:
 
 Desenvolvido por Pedro Felipe - Aplicando conhecimentos Analista Desenvolvedor Web
 
+#### Pré-requisitos para iniciar o projeto
+ > ```Pacote NPM```
+ 
+ > ```Node```
 
 #### Iniciando API
 
