@@ -1,4 +1,4 @@
-# Treasy
+# Projeto teste
 
 Projeto teste de conhecimento - Desenvolvedor Fullstack
 
